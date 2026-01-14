@@ -32,14 +32,14 @@
     "href": "clusters/cluster_500002.html",
     "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
     "section": "",
-    "text": "Scaffold: scaffold_15\nRegion (bp): 4.1{6}–5.85{6}\nWindows: 82–116\nSNPs: 175"
+    "text": "Scaffold: scaffold_15\nRegion (bp): 4100000–5850000\nWindows: 82–116\nSNPs: 175"
   },
   {
     "objectID": "clusters/cluster_500002.html#summary",
     "href": "clusters/cluster_500002.html#summary",
     "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
     "section": "",
-    "text": "Scaffold: scaffold_15\nRegion (bp): 4.1{6}–5.85{6}\nWindows: 82–116\nSNPs: 175"
+    "text": "Scaffold: scaffold_15\nRegion (bp): 4100000–5850000\nWindows: 82–116\nSNPs: 175"
   },
   {
     "objectID": "clusters/cluster_500002.html#pca",
@@ -74,14 +74,14 @@
     "href": "clusters/cluster_500001.html",
     "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
     "section": "",
-    "text": "Scaffold: scaffold_15\nRegion (bp): 3.5{5}–3.05{6}\nWindows: 7–60\nSNPs: 270"
+    "text": "Scaffold: scaffold_15\nRegion (bp): 350000–3050000\nWindows: 7–60\nSNPs: 270"
   },
   {
     "objectID": "clusters/cluster_500001.html#summary",
     "href": "clusters/cluster_500001.html#summary",
     "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
     "section": "",
-    "text": "Scaffold: scaffold_15\nRegion (bp): 3.5{5}–3.05{6}\nWindows: 7–60\nSNPs: 270"
+    "text": "Scaffold: scaffold_15\nRegion (bp): 350000–3050000\nWindows: 7–60\nSNPs: 270"
   },
   {
     "objectID": "clusters/cluster_500001.html#pca",
@@ -116,14 +116,14 @@
     "href": "clusters/cluster_500101.html",
     "title": "Cluster 500101 (scaffold_48: 90449-714116)",
     "section": "",
-    "text": "Scaffold: scaffold_48\nRegion (bp): 9.0449{4}–7.14116{5}\nWindows: 1–2\nSNPs: 250"
+    "text": "Scaffold: scaffold_48\nRegion (bp): 90449–714116\nWindows: 1–2\nSNPs: 250"
   },
   {
     "objectID": "clusters/cluster_500101.html#summary",
     "href": "clusters/cluster_500101.html#summary",
     "title": "Cluster 500101 (scaffold_48: 90449-714116)",
     "section": "",
-    "text": "Scaffold: scaffold_48\nRegion (bp): 9.0449{4}–7.14116{5}\nWindows: 1–2\nSNPs: 250"
+    "text": "Scaffold: scaffold_48\nRegion (bp): 90449–714116\nWindows: 1–2\nSNPs: 250"
   },
   {
     "objectID": "clusters/cluster_500101.html#pca",

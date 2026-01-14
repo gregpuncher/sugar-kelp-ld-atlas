@@ -44,7 +44,7 @@ write_cluster_page <- function(row) {
     "## Summary",
     "",
     "- Scaffold: `r meta$scaffold`",
-    "- Region (bp): `r meta$start_bp`–`r meta$end_bp`",
+    "- Region (bp): `r format(meta$start_bp, big.mark = ",")`–`r format(meta$end_bp, big.mark = ",")`",
     "- Windows: `r meta$min_win`–`r meta$max_win`",
     "- SNPs: `r meta$n_snps`",
     "",
