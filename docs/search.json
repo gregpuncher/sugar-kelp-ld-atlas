@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sugar Kelp LD Atlas",
+    "section": "",
+    "text": "This site hosts PCA plots, LD heatmaps, and LD network visualizations for major linkage disequilibrium (LD) clusters in Saccharina latissima.\nIt is intended as a browsable companion to genomic analyses of sugar kelp population structure and local adaptation."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Sugar Kelp LD Atlas",
+    "section": "",
+    "text": "This site hosts PCA plots, LD heatmaps, and LD network visualizations for major linkage disequilibrium (LD) clusters in Saccharina latissima.\nIt is intended as a browsable companion to genomic analyses of sugar kelp population structure and local adaptation."
+  },
+  {
+    "objectID": "index.html#what-youll-eventually-find-here",
+    "href": "index.html#what-youll-eventually-find-here",
+    "title": "Sugar Kelp LD Atlas",
+    "section": "What you’ll eventually find here",
+    "text": "What you’ll eventually find here\n\nPCA plots for each LD cluster\nLD heatmaps by scaffold and genomic window\nLD network visualizations\nFunctional and molecular annotations\nSearchable tables linking function to genomic regions"
+  }
+]

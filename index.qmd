@@ -1,0 +1,20 @@
+---
+title: "Sugar Kelp LD Atlas"
+author: "Gregory N. Puncher"
+format: html
+editor: visual
+---
+
+## Welcome
+
+This site hosts PCA plots, LD heatmaps, and LD network visualizations for major linkage disequilibrium (LD) clusters in *Saccharina latissima*.
+
+It is intended as a browsable companion to genomic analyses of sugar kelp population structure and local adaptation.
+
+## What you’ll eventually find here
+
+-   PCA plots for each LD cluster
+-   LD heatmaps by scaffold and genomic window
+-   LD network visualizations
+-   Functional and molecular annotations
+-   Searchable tables linking function to genomic regions
