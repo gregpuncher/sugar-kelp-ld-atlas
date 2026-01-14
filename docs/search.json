@@ -19,5 +19,138 @@
     "title": "Sugar Kelp LD Atlas",
     "section": "What you’ll eventually find here",
     "text": "What you’ll eventually find here\n\nPCA plots for each LD cluster\nLD heatmaps by scaffold and genomic window\nLD network visualizations\nFunctional and molecular annotations\nSearchable tables linking function to genomic regions"
+  },
+  {
+    "objectID": "index.html#browse-clusters",
+    "href": "index.html#browse-clusters",
+    "title": "Sugar Kelp LD Atlas",
+    "section": "Browse clusters",
+    "text": "Browse clusters"
+  },
+  {
+    "objectID": "clusters/cluster_500002.html",
+    "href": "clusters/cluster_500002.html",
+    "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
+    "section": "",
+    "text": "Scaffold: scaffold_15\nRegion (bp): 4.1{6}–5.85{6}\nWindows: 82–116\nSNPs: 175"
+  },
+  {
+    "objectID": "clusters/cluster_500002.html#summary",
+    "href": "clusters/cluster_500002.html#summary",
+    "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
+    "section": "",
+    "text": "Scaffold: scaffold_15\nRegion (bp): 4.1{6}–5.85{6}\nWindows: 82–116\nSNPs: 175"
+  },
+  {
+    "objectID": "clusters/cluster_500002.html#pca",
+    "href": "clusters/cluster_500002.html#pca",
+    "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
+    "section": "PCA",
+    "text": "PCA\n\n\n*PCA image not found yet:*  ../assets/pca/cluster_500002_pca.png"
+  },
+  {
+    "objectID": "clusters/cluster_500002.html#ld-heatmap",
+    "href": "clusters/cluster_500002.html#ld-heatmap",
+    "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
+    "section": "LD heatmap",
+    "text": "LD heatmap\n\n\n*LD heatmap not found yet:*  ../assets/ld_heatmaps/cluster_500002_ldheat.png"
+  },
+  {
+    "objectID": "clusters/cluster_500002.html#ld-network",
+    "href": "clusters/cluster_500002.html#ld-network",
+    "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
+    "section": "LD network",
+    "text": "LD network\n\n\n*LD network not found yet:*  ../assets/ld_networks/cluster_500002_network.png"
+  },
+  {
+    "objectID": "clusters/cluster_500002.html#snp-annotations",
+    "href": "clusters/cluster_500002.html#snp-annotations",
+    "title": "Cluster 500002 (scaffold_15: 4100000-5850000)",
+    "section": "SNP annotations",
+    "text": "SNP annotations"
+  },
+  {
+    "objectID": "clusters/cluster_500001.html",
+    "href": "clusters/cluster_500001.html",
+    "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
+    "section": "",
+    "text": "Scaffold: scaffold_15\nRegion (bp): 3.5{5}–3.05{6}\nWindows: 7–60\nSNPs: 270"
+  },
+  {
+    "objectID": "clusters/cluster_500001.html#summary",
+    "href": "clusters/cluster_500001.html#summary",
+    "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
+    "section": "",
+    "text": "Scaffold: scaffold_15\nRegion (bp): 3.5{5}–3.05{6}\nWindows: 7–60\nSNPs: 270"
+  },
+  {
+    "objectID": "clusters/cluster_500001.html#pca",
+    "href": "clusters/cluster_500001.html#pca",
+    "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
+    "section": "PCA",
+    "text": "PCA\n\n\n*PCA image not found yet:*  ../assets/pca/cluster_500001_pca.png"
+  },
+  {
+    "objectID": "clusters/cluster_500001.html#ld-heatmap",
+    "href": "clusters/cluster_500001.html#ld-heatmap",
+    "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
+    "section": "LD heatmap",
+    "text": "LD heatmap\n\n\n*LD heatmap not found yet:*  ../assets/ld_heatmaps/cluster_500001_ldheat.png"
+  },
+  {
+    "objectID": "clusters/cluster_500001.html#ld-network",
+    "href": "clusters/cluster_500001.html#ld-network",
+    "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
+    "section": "LD network",
+    "text": "LD network\n\n\n*LD network not found yet:*  ../assets/ld_networks/cluster_500001_network.png"
+  },
+  {
+    "objectID": "clusters/cluster_500001.html#snp-annotations",
+    "href": "clusters/cluster_500001.html#snp-annotations",
+    "title": "Cluster 500001 (scaffold_15: 350000-3050000)",
+    "section": "SNP annotations",
+    "text": "SNP annotations"
+  },
+  {
+    "objectID": "clusters/cluster_500101.html",
+    "href": "clusters/cluster_500101.html",
+    "title": "Cluster 500101 (scaffold_48: 90449-714116)",
+    "section": "",
+    "text": "Scaffold: scaffold_48\nRegion (bp): 9.0449{4}–7.14116{5}\nWindows: 1–2\nSNPs: 250"
+  },
+  {
+    "objectID": "clusters/cluster_500101.html#summary",
+    "href": "clusters/cluster_500101.html#summary",
+    "title": "Cluster 500101 (scaffold_48: 90449-714116)",
+    "section": "",
+    "text": "Scaffold: scaffold_48\nRegion (bp): 9.0449{4}–7.14116{5}\nWindows: 1–2\nSNPs: 250"
+  },
+  {
+    "objectID": "clusters/cluster_500101.html#pca",
+    "href": "clusters/cluster_500101.html#pca",
+    "title": "Cluster 500101 (scaffold_48: 90449-714116)",
+    "section": "PCA",
+    "text": "PCA\n\n\n*PCA image not found yet:*  ../assets/pca/cluster_500101_pca.png"
+  },
+  {
+    "objectID": "clusters/cluster_500101.html#ld-heatmap",
+    "href": "clusters/cluster_500101.html#ld-heatmap",
+    "title": "Cluster 500101 (scaffold_48: 90449-714116)",
+    "section": "LD heatmap",
+    "text": "LD heatmap\n\n\n*LD heatmap not found yet:*  ../assets/ld_heatmaps/cluster_500101_ldheat.png"
+  },
+  {
+    "objectID": "clusters/cluster_500101.html#ld-network",
+    "href": "clusters/cluster_500101.html#ld-network",
+    "title": "Cluster 500101 (scaffold_48: 90449-714116)",
+    "section": "LD network",
+    "text": "LD network\n\n\n*LD network not found yet:*  ../assets/ld_networks/cluster_500101_network.png"
+  },
+  {
+    "objectID": "clusters/cluster_500101.html#snp-annotations",
+    "href": "clusters/cluster_500101.html#snp-annotations",
+    "title": "Cluster 500101 (scaffold_48: 90449-714116)",
+    "section": "SNP annotations",
+    "text": "SNP annotations"
   }
 ]

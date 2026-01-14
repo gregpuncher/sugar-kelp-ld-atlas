@@ -1,0 +1,3 @@
+CLUSTER 500002
+Scaffold: scaffold_15
+Region: 4100000-5850000

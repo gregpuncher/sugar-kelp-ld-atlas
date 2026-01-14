@@ -18,3 +18,36 @@ It is intended as a browsable companion to genomic analyses of sugar kelp popula
 -   LD network visualizations
 -   Functional and molecular annotations
 -   Searchable tables linking function to genomic regions
+
+
+
+## Browse clusters
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(DT)
+
+clusters <- readr::read_csv("data/clusters_metadata.csv", show_col_types = FALSE) %>%
+  mutate(
+    cluster_id = as.character(cluster_id),
+    cluster_page = paste0("clusters/cluster_", cluster_id, ".html"),
+    Region = paste0(start_bp, "–", end_bp),
+    Windows = paste0(min_win, "–", max_win),
+    Cluster = sprintf('<a href="%s">%s</a>', cluster_page, cluster_id)
+  ) %>%
+  arrange(scaffold, start_bp) %>%
+  select(
+    Scaffold = scaffold,
+    Cluster,
+    `Region (bp)` = Region,
+    Windows,
+    `# SNPs` = n_snps
+  )
+
+DT::datatable(
+  clusters,
+  escape = FALSE,
+  rownames = FALSE,
+  options = list(pageLength = 25, autoWidth = TRUE)
+)
+```

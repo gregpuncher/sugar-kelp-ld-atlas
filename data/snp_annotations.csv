@@ -1,0 +1,4 @@
+cluster_id,snp_id,gene_id,product,molecular_function,go_terms,notes
+500001,scaffold_15:123456,NA,NA,NA,NA,placeholder
+500002,scaffold_15:456789,NA,NA,NA,NA,placeholder
+500101,scaffold_48:222222,NA,NA,NA,NA,placeholder

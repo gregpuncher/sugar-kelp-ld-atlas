@@ -1,0 +1,4 @@
+cluster_id,scaffold,min_win,max_win,start_bp,end_bp,n_snps,pca_img,heatmap_img,network_img
+500001,scaffold_15,7,60,350000,3050000,270,assets/pca/cluster_500001_pca.png,assets/ld_heatmaps/cluster_500001_ldheat.png,assets/ld_networks/cluster_500001_network.png
+500002,scaffold_15,82,116,4100000,5850000,175,assets/pca/cluster_500002_pca.png,assets/ld_heatmaps/cluster_500002_ldheat.png,assets/ld_networks/cluster_500002_network.png
+500101,scaffold_48,1,2,90449,714116,250,assets/pca/cluster_500101_pca.png,assets/ld_heatmaps/cluster_500101_ldheat.png,assets/ld_networks/cluster_500101_network.png
