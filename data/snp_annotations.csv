@@ -1,4 +1,12 @@
-cluster_id,snp_id,gene_id,product,molecular_function,go_terms,notes
-500001,scaffold_15:123456,NA,NA,NA,NA,placeholder
-500002,scaffold_15:456789,NA,NA,NA,NA,placeholder
-500101,scaffold_48:222222,NA,NA,NA,NA,placeholder
+cluster_id,molecular_function,go_terms
+scaffold1_win3-4,Immune response,
+scaffold10_win4,,
+scaffold12_win2,,
+scaffold12_win4,,
+scaffold14_win4,,
+scaffold14_win6,,
+scaffold15_win2-5,,
+scaffold16_win2-6,,
+scaffold6_win7-10,,
+scaffold9_win2-3,,
+scaffold9_win5,,

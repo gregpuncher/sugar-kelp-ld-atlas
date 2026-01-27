@@ -1,0 +1,3 @@
+CLUSTER scaffold1_win3-4
+Scaffold: scaffold_1
+Region: 10380933-11312278

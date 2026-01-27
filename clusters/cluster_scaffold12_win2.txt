@@ -1,0 +1,3 @@
+CLUSTER scaffold12_win2
+Scaffold: scaffold_12
+Region: 1169755-1255568

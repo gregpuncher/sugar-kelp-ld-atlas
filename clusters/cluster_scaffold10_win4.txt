@@ -1,0 +1,3 @@
+CLUSTER scaffold10_win4
+Scaffold: scaffold_10
+Region: 6100064-6396960

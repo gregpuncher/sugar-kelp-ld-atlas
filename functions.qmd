@@ -1,0 +1,69 @@
+---
+title: "Browse by function"
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+Search the Molecular function column below (e.g., immune response) to view LD clusters containing annotated SNPs associated with that function.
+
+
+```{r}
+library(tidyverse)
+library(DT)
+
+meta <- readr::read_csv("data/clusters_metadata.csv", show_col_types = FALSE) %>%
+  mutate(
+    cluster_id = as.character(cluster_id),
+    cluster_page = paste0("clusters/cluster_", cluster_id, ".html")
+  )
+
+ann <- readr::read_csv("data/snp_annotations.csv", show_col_types = FALSE) %>%
+  mutate(
+    cluster_id = as.character(cluster_id),
+    molecular_function = as.character(molecular_function),
+    go_terms = as.character(go_terms)
+  )
+
+cluster_fun <- ann %>%
+  mutate(
+    molecular_function = na_if(trimws(molecular_function), ""),
+    go_terms = na_if(trimws(go_terms), "")
+  ) %>%
+  group_by(cluster_id) %>%
+  summarise(
+    n_annotated_snps = sum(!is.na(molecular_function) | !is.na(go_terms), na.rm = TRUE),
+    molecular_functions = paste(sort(unique(na.omit(molecular_function))), collapse = "; "),
+    go_terms = paste(sort(unique(unlist(strsplit(na.omit(go_terms), ";")))), collapse = "; "),
+    .groups = "drop"
+  )
+
+tbl <- meta %>%
+  left_join(cluster_fun, by = "cluster_id") %>%
+  mutate(
+    n_annotated_snps = replace_na(n_annotated_snps, 0),
+    Cluster = sprintf('<a href="%s">%s</a>', cluster_page, cluster_id)
+  ) %>%
+  select(
+    Scaffold = scaffold,
+    Cluster,
+    `Start (bp)` = start_bp,
+    `End (bp)` = end_bp,
+    `# SNPs` = n_snps,
+    `# annotated SNPs` = n_annotated_snps,
+    `Molecular function` = molecular_functions,
+    `GO terms` = go_terms
+  )
+
+DT::datatable(
+  tbl,
+  escape = FALSE,
+  rownames = FALSE,
+  filter = "top",
+  options = list(
+    pageLength = 25,
+    scrollX = TRUE,
+    autoWidth = TRUE
+  )
+)
+```

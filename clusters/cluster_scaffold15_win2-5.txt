@@ -1,0 +1,3 @@
+CLUSTER scaffold15_win2-5
+Scaffold: scaffold_15
+Region: 903756-3502225

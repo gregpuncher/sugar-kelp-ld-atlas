@@ -1,0 +1,95 @@
+---
+title: "Cluster scaffold101_3 (scaffold_101: 1373344-1658819)"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(DT)
+library(knitr)
+library(here)
+
+# Read cluster metadata for just this cluster
+meta <- readr::read_csv("../data/clusters_metadata.csv", show_col_types = FALSE) %>%
+  mutate(cluster_id = as.character(cluster_id)) %>%
+  filter(cluster_id == "scaffold101_3") %>%
+  slice(1)
+
+# Read SNP annotations for just this cluster
+ann <- readr::read_csv("../data/snp_annotations.csv", show_col_types = FALSE) %>%
+  mutate(cluster_id = as.character(cluster_id)) %>%
+  filter(cluster_id == "scaffold101_3")
+
+# Web paths for HTML (cluster pages are in docs/clusters)
+pca_web     <- file.path('..', meta$pca_img)
+rda_web     <- file.path('..', meta$rda_img)
+heatmap_web <- file.path('..', meta$heatmap_img)
+network_web <- file.path('..', meta$network_img)
+
+# Disk paths for existence + include_graphics (anchor to project root)
+pca_file     <- here::here(meta$pca_img)
+rda_file     <- here::here(meta$rda_img)
+heatmap_file <- here::here(meta$heatmap_img)
+network_file <- here::here(meta$network_img)
+
+has_pca     <- file.exists(pca_file)
+has_rda     <- file.exists(rda_file)
+has_heatmap <- file.exists(heatmap_file)
+has_network <- file.exists(network_file)
+```
+
+## Summary
+
+- Scaffold: `r meta$scaffold`
+- Region (bp): `r format(meta$start_bp, big.mark = ",")`–`r format(meta$end_bp, big.mark = ",")`
+- SNPs: `r meta$n_snps`
+
+## PCA
+
+```{r echo=FALSE}
+if (has_pca) {
+  knitr::include_graphics(pca_file)
+} else {
+  cat('*PCA image not found yet:* ', pca_web)
+}
+```
+
+## RDA
+
+```{r echo=FALSE}
+if (has_rda) {
+  knitr::include_graphics(rda_file)
+} else {
+  cat('*RDA image not found yet:* ', rda_web)
+}
+```
+
+## LD heatmap
+
+```{r echo=FALSE}
+if (has_heatmap) {
+  knitr::include_graphics(heatmap_file)
+} else {
+  cat('*LD heatmap not found yet:* ', heatmap_web)
+}
+```
+
+## LD network
+
+```{r echo=FALSE}
+if (has_network) {
+  knitr::include_graphics(network_file)
+} else {
+  cat('*LD network not found yet:* ', network_web)
+}
+```
+
+## SNP annotations
+
+```{r echo=FALSE}
+DT::datatable(
+  ann,
+  rownames = FALSE,
+  options = list(pageLength = 25, scrollX = TRUE)
+)
+```
+

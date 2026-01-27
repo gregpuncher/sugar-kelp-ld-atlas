@@ -1,0 +1,3 @@
+CLUSTER scaffold9_win5
+Scaffold: scaffold_9
+Region: 5192063-5829774

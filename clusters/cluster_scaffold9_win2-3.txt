@@ -1,0 +1,3 @@
+CLUSTER scaffold9_win2-3
+Scaffold: scaffold_9
+Region: 2145710-3592750

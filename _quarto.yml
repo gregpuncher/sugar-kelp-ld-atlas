@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+    -assets/**
+  
+resources: 
+  - assets
 
 website:
   title: "Sugar Kelp LD Atlas"
@@ -8,6 +13,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: functions.qmd
+        text: Browse by function
 
 format:
   html:

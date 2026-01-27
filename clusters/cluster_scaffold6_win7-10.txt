@@ -1,0 +1,3 @@
+CLUSTER scaffold6_win7-10
+Scaffold: scaffold_6
+Region: 6228712-7476530

@@ -1,0 +1,3 @@
+CLUSTER scaffold14_win4
+Scaffold: scaffold_14
+Region: 3679743-4079459
