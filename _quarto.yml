@@ -2,10 +2,8 @@ project:
   type: website
   output-dir: docs
   resources: 
-    -assets/**
-  
-resources: 
-  - assets
+    - assets/**
+
 
 website:
   title: "Sugar Kelp LD Atlas"
@@ -15,12 +13,16 @@ website:
         text: Home
       - href: functions.qmd
         text: Browse by function
+      - href: acknowledgements.qmd  
+        text: Acknowledgements
+        
 
 format:
   html:
     theme: cosmo
     toc: true
     toc-location: left
+    page-layout: full
 
 execute:
-  freeze: auto
+  freeze: false

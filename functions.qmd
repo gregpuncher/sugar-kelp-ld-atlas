@@ -12,6 +12,7 @@ Search the table below (use the filters at the top of each column) to find LD cl
 ```{r}
 library(tidyverse)
 library(DT)
+library(htmltools)
 
 meta <- readr::read_csv("data/clusters_metadata.csv", show_col_types = FALSE) %>%
   mutate(
@@ -20,9 +21,9 @@ meta <- readr::read_csv("data/clusters_metadata.csv", show_col_types = FALSE) %>
   )
 
 # ----------------------------
-# SNP annotations (NEW schema)
+# GO annotations
 # ----------------------------
-ann_raw <- readr::read_csv("data/snp_annotations.csv", show_col_types = FALSE)
+ann_raw <- readr::read_csv("data/GO_annotation.csv", show_col_types = FALSE)
 
 # Normalize column names (handles spaces + capitalization)
 ann <- ann_raw %>%
@@ -30,45 +31,29 @@ ann <- ann_raw %>%
   rename_with(tolower) %>%                            # lower-case
   mutate(cluster_id = as.character(cluster_id))
 
-# Expected (after normalization):
-# cluster_id
-# functional_gene_descriptions
-# biological_process
-# molecular_function
-# cellular_component
-# comments
+needed <- c(
+  "cluster_id", 
+  "n_go_annotated_proteins", 
+  "biological_process", 
+  "cellular_component", 
+  "molecular_function", 
+  "gene_descriptions"
+)
 
-needed <- c("cluster_id", "functional_gene_descriptions", "biological_process",
-            "molecular_function", "cellular_component", "comments")
 missing_cols <- setdiff(needed, names(ann))
 if (length(missing_cols) > 0) {
-  stop("data/snp_annotations.csv is missing required columns: ",
+  stop("data/GO_annotation.csv is missing required columns: ",
        paste(missing_cols, collapse = ", "))
 }
 
-# Clean strings
-ann <- ann %>%
-  mutate(
-    functional_gene_descriptions = na_if(trimws(functional_gene_descriptions), ""),
-    biological_process           = na_if(trimws(biological_process), ""),
-    molecular_function           = na_if(trimws(molecular_function), ""),
-    cellular_component           = na_if(trimws(cellular_component), ""),
-    comments                     = na_if(trimws(comments), "")
-  )
-
-# ----------------------------
-# Summarise annotations per cluster
-# ----------------------------
 cluster_fun <- ann %>%
-  group_by(cluster_id) %>%
-  summarise(
-    n_annotated_rows = n(),
-    gene_descriptions = paste(sort(unique(na.omit(functional_gene_descriptions))), collapse = "; "),
-    biological_processes = paste(sort(unique(na.omit(biological_process))), collapse = "; "),
-    molecular_functions  = paste(sort(unique(na.omit(molecular_function))), collapse = "; "),
-    cellular_components  = paste(sort(unique(na.omit(cellular_component))), collapse = "; "),
-    comments = paste(sort(unique(na.omit(comments))), collapse = "; "),
-    .groups = "drop"
+  transmute(
+    cluster_id,
+    n_annotated_rows = as.integer(n_go_annotated_proteins),
+    Gene_Descriptions = na_if(trimws(gene_descriptions), ""),
+    Biological_Processes = na_if(trimws(biological_process), ""),
+    Molecular_Functions  = na_if(trimws(molecular_function), ""),
+    Cellular_Components  = na_if(trimws(cellular_component), "")
   )
 
 # ----------------------------
@@ -86,12 +71,25 @@ tbl <- meta %>%
     `Start (bp)` = start_bp,
     `End (bp)` = end_bp,
     `# SNPs` = n_snps,
-    `# annotations` = n_annotated_rows,
-    `Molecular function` = molecular_functions,
-    `Biological process` = biological_processes,
-    `Cellular component` = cellular_components,
-    `Gene descriptions` = gene_descriptions,
-    `Comments` = comments
+    `# GO-annotated proteins` = n_annotated_rows,
+    `Molecular function` = Molecular_Functions,
+    `Biological process` = Biological_Processes,
+    `Cellular component` = Cellular_Components,
+    `Gene descriptions` = Gene_Descriptions
+  )
+
+truncate_with_tooltip <- function(x, n = 80) {
+  x <- ifelse(is.na(x), "", x)
+  short <- ifelse(nchar(x) > n, paste0(substr(x, 1, n), "…"), x)
+  sprintf('<span title="%s">%s</span>', htmlEscape(x), htmlEscape(short))
+}
+
+tbl <- tbl %>%
+  mutate(
+    `Molecular function` = truncate_with_tooltip(`Molecular function`, 70),
+    `Biological process` = truncate_with_tooltip(`Biological process`, 70),
+    `Cellular component` = truncate_with_tooltip(`Cellular component`, 50),
+    `Gene descriptions`  = truncate_with_tooltip(`Gene descriptions`, 90)
   )
 
 DT::datatable(

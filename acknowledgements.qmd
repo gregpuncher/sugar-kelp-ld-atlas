@@ -1,0 +1,11 @@
+---
+title: "Acknowledgements"
+---
+
+This work was supported by:
+
+- MERINOV
+- L'Université du Québec à Rimouski
+- National Research Council
+
+We thank collaborators, field teams, and technical staff for assistance with sampling, sequencing, and analysis.

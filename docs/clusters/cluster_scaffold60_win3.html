@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../functions.html"> 
 <span class="menu-text">Browse by function</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../acknowledgements.html"> 
+<span class="menu-text">Acknowledgements</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -134,10 +138,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca">PCA</a></li>
-  <li><a href="#rda" id="toc-rda" class="nav-link" data-scroll-target="#rda">RDA</a></li>
-  <li><a href="#ld-heatmap" id="toc-ld-heatmap" class="nav-link" data-scroll-target="#ld-heatmap">LD heatmap</a></li>
+  <li><a href="#partial-rda-environmental-variables" id="toc-partial-rda-environmental-variables" class="nav-link" data-scroll-target="#partial-rda-environmental-variables">Partial RDA – Environmental variables</a></li>
+  <li><a href="#partial-rda-phenotypic-variables" id="toc-partial-rda-phenotypic-variables" class="nav-link" data-scroll-target="#partial-rda-phenotypic-variables">Partial RDA – Phenotypic variables</a></li>
   <li><a href="#ld-network" id="toc-ld-network" class="nav-link" data-scroll-target="#ld-network">LD network</a></li>
-  <li><a href="#snp-annotations" id="toc-snp-annotations" class="nav-link" data-scroll-target="#snp-annotations">SNP annotations</a></li>
+  <li><a href="#ld-heatmap" id="toc-ld-heatmap" class="nav-link" data-scroll-target="#ld-heatmap">LD heatmap</a></li>
+  <li><a href="#go-annotations" id="toc-go-annotations" class="nav-link" data-scroll-target="#go-annotations">GO annotations</a></li>
   </ul>
 </nav>
 </nav>
@@ -181,17 +186,45 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/pca/scaffold_60_pca.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<p><img src="../assets/pca/scaffold60_win3_PCA.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="rda" class="level2">
-<h2 class="anchored" data-anchor-id="rda">RDA</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>*RDA image not found yet:*  ../assets/rda/scaffold_60_rda.jpg</code></pre>
+<section id="partial-rda-environmental-variables" class="level2">
+<h2 class="anchored" data-anchor-id="partial-rda-environmental-variables">Partial RDA – Environmental variables</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/rda_env/scaffold60_win3_RDA.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="partial-rda-phenotypic-variables" class="level2">
+<h2 class="anchored" data-anchor-id="partial-rda-phenotypic-variables">Partial RDA – Phenotypic variables</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/rda_pheno/scaffold60_win3_RDA.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="ld-network" class="level2">
+<h2 class="anchored" data-anchor-id="ld-network">LD network</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/ld_networks/scaffold60_win3_network.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:95.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -207,24 +240,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="ld-network" class="level2">
-<h2 class="anchored" data-anchor-id="ld-network">LD network</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/ld_networks/scaffold_60_network.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:95.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="snp-annotations" class="level2">
-<h2 class="anchored" data-anchor-id="snp-annotations">SNP annotations</h2>
+<section id="go-annotations" class="level2">
+<h2 class="anchored" data-anchor-id="go-annotations">GO annotations</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-46c172a033befa823dfb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-46c172a033befa823dfb">{"x":{"filter":"none","vertical":false,"data":[["scaffold60_win3"],["P-loop containing nucleoside triphosphate hydrolase protein"],[null],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>cluster_id<\/th>\n      <th>Functional_Gene_Descriptions<\/th>\n      <th>Biological_Process<\/th>\n      <th>Molecular_Function<\/th>\n      <th>Cellular_Component<\/th>\n      <th>Comments<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":25,"scrollX":true,"columnDefs":[{"name":"cluster_id","targets":0},{"name":"Functional_Gene_Descriptions","targets":1},{"name":"Biological_Process","targets":2},{"name":"Molecular_Function","targets":3},{"name":"Cellular_Component","targets":4},{"name":"Comments","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0acab2d395431e176931" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0acab2d395431e176931">{"x":{"filter":"none","vertical":false,"data":[["scaffold60_win3"],[0],[null],[null],[null],["Carbohydrate-binding WSC; AAA domain; DNA recombination and repair protein RecA-like, ATP-binding domain; P-loop containing nucleoside triphosphate hydrolase; Prokaryotic membrane lipoprotein lipid attachment site profile.; Parallel beta-helix repeat; Pectin lyase fold/virulence factor; HAD-like domain"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>cluster_id<\/th>\n      <th>n_GO_annotated_proteins<\/th>\n      <th>Biological_Process<\/th>\n      <th>Cellular_Component<\/th>\n      <th>Molecular_Function<\/th>\n      <th>Gene_Descriptions<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":25,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":1},{"name":"cluster_id","targets":0},{"name":"n_GO_annotated_proteins","targets":1},{"name":"Biological_Process","targets":2},{"name":"Cellular_Component","targets":3},{"name":"Molecular_Function","targets":4},{"name":"Gene_Descriptions","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 

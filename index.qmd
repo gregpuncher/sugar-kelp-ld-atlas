@@ -1,9 +1,16 @@
 ---
 title: "Sugar Kelp LD Atlas"
 author: "Gregory N. Puncher"
-format: html
+title-block-style: none
+format:
+  html:
+    page-layout: full
 editor: visual
 ---
+
+::: {style="display:flex; gap:20px; align-items:center; justify-content:flex-end;"}
+![](assets/logos/MERINOV.png){height="60px"} ![](assets/logos/UQAR.png){height="60px"}
+:::
 
 ## Welcome
 
@@ -11,15 +18,13 @@ This site hosts PCA plots, LD heatmaps, and LD network visualizations for major 
 
 It is intended as a browsable companion to genomic analyses of sugar kelp population structure and local adaptation.
 
-## What you’ll eventually find here
+## What you’ll find here
 
 -   PCA plots for each LD cluster
 -   LD heatmaps by scaffold and genomic window
 -   LD network visualizations
 -   Functional and molecular annotations
 -   Searchable tables linking function to genomic regions
-
-
 
 ## Browse clusters
 
