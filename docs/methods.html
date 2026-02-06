@@ -98,12 +98,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Browse by function</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./acknowledgements.html"> 
-<span class="menu-text">Acknowledgements</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./methods.html" aria-current="page"> 
 <span class="menu-text">Methods &amp; Citations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./acknowledgements.html"> 
+<span class="menu-text">Acknowledgements</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -169,30 +169,29 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This website presents an interactive atlas of linkage disequilibrium (LD) architecture and genomic structure in <em>Saccharina latissima</em>. The atlas was developed to complement population genomic analyses by providing region-specific visualization of ordination results, LD structure, network connectivity, and functional annotation.</p>
 <p>All analyses were conducted using whole-genome sequencing data and are summarized here in an interactive format to facilitate detailed exploration of results that cannot be fully represented as static figures.</p>
-<hr>
 </section>
 <section id="sampling-and-tissue-collection" class="level2">
 <h2 class="anchored" data-anchor-id="sampling-and-tissue-collection">Sampling and Tissue Collection</h2>
 <p>Sporophytes were collected by scuba diving or by hand at low tide between 2018 and 2023 from 8 locations spanning the Estuary and Gulf of St.&nbsp;Lawrence and the Atlantic coast of Nova Scotia. From each individual, approximately 2.5 cm² of blade tissue was excised using either a circular punch or scalpel. Samples were carefully cleaned, blotted dry, and desiccated in silica gel prior to DNA extraction, with desiccant replaced regularly to maintain sample integrity. At selected sites, phenotypic characteristics were recorded. Where possible, fertile tissue from mature sporophytes was retained for induced sporulation and incorporation into an ex situ germplasm collection.</p>
-<hr>
+<p><img src="assets/logos/Sugarkelp_WGS_Map.png" class="img-fluid" style="width:85.0%" data-fig-cap="false"></p>
+<p><strong>Figure 1.</strong> Sampling locations of <em>Saccharina latissima</em> collected between 2018–2023 from the Estuary and Gulf of St.&nbsp;Lawrence and the Atlantic coast of Nova Scotia.</p>
+<p><img src="assets/logos/Sample_collection.jpg" class="img-fluid" style="width:100.0%" data-fig-cap="false"></p>
+<p><strong>Figure 2.</strong> <em>Saccharina latissima</em> sample collection. LEFT - A SCUBA diver collects samples at Miquelon in 2023 (photo credit: Eric Brossier). CENTRE - Phenotype data being collected from an adult sporophyte at Sept Iles in 2022 (photo credit: Tristan LeGoff). RIGHT - Samples from Sept Iles are prepared for preservation and genetic analysis in 2022 (photo credit: Tristan LeGoff).</p>
 </section>
 <section id="genomic-data" class="level2">
 <h2 class="anchored" data-anchor-id="genomic-data">Genomic data</h2>
 <p>Whole-genome sequencing (WGS) data were aligned to the recently published scaffolded and annotated <em>Sacharina latissima</em> genome (DeWeese et al.&nbsp;2025) and processed using standard population genomic workflows. Variant discovery and filtering produced a high-quality SNP dataset used for downstream analyses of population structure, linkage disequilibrium, and genotype–environment associations.</p>
 <p>Analyses focused on genomic regions exhibiting elevated LD, which were identified and summarized as LD clusters spanning contiguous genomic windows.</p>
-<hr>
 </section>
 <section id="identification-of-ld-clusters" class="level2">
 <h2 class="anchored" data-anchor-id="identification-of-ld-clusters">Identification of LD clusters</h2>
 <p>Linkage disequilibrium was quantified among SNPs across genomic windows using pairwise LD metrics. LD clusters were defined as groups of loci exhibiting strong linkage within genomic regions and were summarized by scaffold and physical coordinates.</p>
 <p>These clusters form the primary organizational units of the atlas. Each cluster is represented by a dedicated page that integrates multiple analytical perspectives.</p>
-<hr>
 </section>
 <section id="ordination-analyses-pca" class="level2">
 <h2 class="anchored" data-anchor-id="ordination-analyses-pca">Ordination analyses (PCA)</h2>
 <p>Principal component analyses (PCA) were performed independently for SNPs within each LD cluster to characterize patterns of multilocus genetic structure.</p>
 <p>PCA results are visualized interactively, allowing inspection of population separation and variance explained by individual components. These analyses facilitate comparison of structure among LD clusters and across genomic regions.</p>
-<hr>
 </section>
 <section id="linkage-disequilibrium-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="linkage-disequilibrium-visualization">Linkage disequilibrium visualization</h2>
@@ -203,37 +202,31 @@ ul.task-list li input[type="checkbox"] {
 <section id="ld-networks" class="level3">
 <h3 class="anchored" data-anchor-id="ld-networks">LD networks</h3>
 <p>LD networks were constructed by representing SNPs as nodes and LD relationships as edges above defined thresholds. Network visualizations emphasize connectivity patterns and reveal fine-scale structure within LD clusters that may not be apparent from heatmaps alone.</p>
-<hr>
 </section>
 </section>
 <section id="genotypeenvironment-and-genotypephenotype-associations" class="level2">
 <h2 class="anchored" data-anchor-id="genotypeenvironment-and-genotypephenotype-associations">Genotype–environment and genotype–phenotype associations</h2>
 <p>Partial redundancy analyses (RDA) were used to test for associations between genetic variation within LD clusters and environmental or phenotypic variables while accounting for background population structure.</p>
 <p>Separate RDAs were performed for genotype–environment and genotype–phenotype associations. Results are presented as ordination biplots highlighting significant predictors and loci contributing to observed patterns.</p>
-<hr>
 </section>
 <section id="functional-annotation" class="level2">
 <h2 class="anchored" data-anchor-id="functional-annotation">Functional annotation</h2>
 <p>Gene models overlapping LD clusters were identified using genomic coordinates. Functional annotation was obtained from the Joint Genome Institute (JGI) Genome Portal for the <em>Saccharina latissima</em> reference genome (SL-CT1-FG3 v1.0; Frozen Gene Catalog, 2024-04-09; DeWeese et al.&nbsp;2025).</p>
 <p>Gene Ontology (GO) terms, molecular function, biological process, and cellular component annotations were associated with genes located within LD clusters. These annotations are summarized in searchable tables linking functional information to specific genomic regions.</p>
-<hr>
 </section>
 <section id="interactive-tables-and-figures" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-tables-and-figures">Interactive tables and figures</h2>
 <p>All tables and figures presented in this atlas are interactive and rendered client-side in the web browser. Tables support sorting, filtering, and keyword search, while figures allow detailed inspection of patterns across clusters and analyses.</p>
 <p>The interactive format is intended to support transparent exploration of results and to complement primary analyses presented in static form.</p>
-<hr>
 </section>
 <section id="software-and-implementation" class="level2">
 <h2 class="anchored" data-anchor-id="software-and-implementation">Software and implementation</h2>
 <p>This atlas was generated using the Quarto publishing system and the R statistical environment. Key R packages were used for data manipulation, genomic interval operations, visualization, and interactive table rendering.</p>
 <p>The complete source code and rendered site are hosted on GitHub, and the atlas is published using GitHub Pages.</p>
-<hr>
 </section>
 <section id="intended-use-and-limitations" class="level2">
 <h2 class="anchored" data-anchor-id="intended-use-and-limitations">Intended use and limitations</h2>
 <p>This resource is intended as a companion to population genomic analyses of <em>Saccharina latissima</em>. While extensive quality control and validation were applied, users are encouraged to interpret patterns within the broader context of biological replication, sampling design, and analytical assumptions.</p>
-<hr>
 </section>
 <section id="citations" class="level2">
 <h2 class="anchored" data-anchor-id="citations">Citations</h2>

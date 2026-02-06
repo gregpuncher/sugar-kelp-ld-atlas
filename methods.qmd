@@ -8,14 +8,19 @@ This website presents an interactive atlas of linkage disequilibrium (LD) archit
 
 All analyses were conducted using whole-genome sequencing data and are summarized here in an interactive format to facilitate detailed exploration of results that cannot be fully represented as static figures.
 
----
 
 ##  Sampling and Tissue Collection
 
 Sporophytes were collected by scuba diving or by hand at low tide between 2018 and 2023 from 8 locations spanning the Estuary and Gulf of St. Lawrence and the Atlantic coast of Nova Scotia. From each individual, approximately 2.5 cm² of blade tissue was excised using either a circular punch or scalpel. Samples were carefully cleaned, blotted dry, and desiccated in silica gel prior to DNA extraction, with desiccant replaced regularly to maintain sample integrity.
 At selected sites, phenotypic characteristics were recorded. Where possible, fertile tissue from mature sporophytes was retained for induced sporulation and incorporation into an ex situ germplasm collection.
 
----
+![](assets/logos/Sugarkelp_WGS_Map.png){fig-cap=false width=85%}
+
+**Figure 1.** Sampling locations of *Saccharina latissima* collected between 2018–2023 from the Estuary and Gulf of St. Lawrence and the Atlantic coast of Nova Scotia.
+
+![](assets/logos/Sample_collection.jpg){fig-cap=false width=100%}
+
+**Figure 2.** *Saccharina latissima* sample collection. LEFT - A SCUBA diver collects samples at Miquelon in 2023 (photo credit: Eric Brossier). CENTRE - Phenotype data being collected from an adult sporophyte at Sept Iles in 2022 (photo credit: Tristan LeGoff). RIGHT - Samples from Sept Iles are prepared for preservation and genetic analysis in 2022 (photo credit: Tristan LeGoff).
 
 ## Genomic data
 
@@ -23,7 +28,6 @@ Whole-genome sequencing (WGS) data were aligned to the recently published scaffo
 
 Analyses focused on genomic regions exhibiting elevated LD, which were identified and summarized as LD clusters spanning contiguous genomic windows.
 
----
 
 ## Identification of LD clusters
 
@@ -31,7 +35,6 @@ Linkage disequilibrium was quantified among SNPs across genomic windows using pa
 
 These clusters form the primary organizational units of the atlas. Each cluster is represented by a dedicated page that integrates multiple analytical perspectives.
 
----
 
 ## Ordination analyses (PCA)
 
@@ -39,7 +42,6 @@ Principal component analyses (PCA) were performed independently for SNPs within 
 
 PCA results are visualized interactively, allowing inspection of population separation and variance explained by individual components. These analyses facilitate comparison of structure among LD clusters and across genomic regions.
 
----
 
 ## Linkage disequilibrium visualization
 
@@ -51,7 +53,6 @@ Pairwise LD among SNPs within each cluster was visualized using LD heatmaps, org
 
 LD networks were constructed by representing SNPs as nodes and LD relationships as edges above defined thresholds. Network visualizations emphasize connectivity patterns and reveal fine-scale structure within LD clusters that may not be apparent from heatmaps alone.
 
----
 
 ## Genotype–environment and genotype–phenotype associations
 
@@ -59,7 +60,6 @@ Partial redundancy analyses (RDA) were used to test for associations between gen
 
 Separate RDAs were performed for genotype–environment and genotype–phenotype associations. Results are presented as ordination biplots highlighting significant predictors and loci contributing to observed patterns.
 
----
 
 ## Functional annotation
 
@@ -67,7 +67,6 @@ Gene models overlapping LD clusters were identified using genomic coordinates. F
 
 Gene Ontology (GO) terms, molecular function, biological process, and cellular component annotations were associated with genes located within LD clusters. These annotations are summarized in searchable tables linking functional information to specific genomic regions.
 
----
 
 ## Interactive tables and figures
 
@@ -75,7 +74,6 @@ All tables and figures presented in this atlas are interactive and rendered clie
 
 The interactive format is intended to support transparent exploration of results and to complement primary analyses presented in static form.
 
----
 
 ## Software and implementation
 
@@ -83,13 +81,11 @@ This atlas was generated using the Quarto publishing system and the R statistica
 
 The complete source code and rendered site are hosted on GitHub, and the atlas is published using GitHub Pages.
 
----
 
 ## Intended use and limitations
 
 This resource is intended as a companion to population genomic analyses of *Saccharina latissima*. While extensive quality control and validation were applied, users are encouraged to interpret patterns within the broader context of biological replication, sampling design, and analytical assumptions.
 
----
 
 ## Citations
 

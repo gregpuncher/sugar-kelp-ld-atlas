@@ -18,15 +18,15 @@ Users can browse individual LD clusters, examine ordination and network structur
 
 ### What this atlas provides
 
--    Cluster-specific **PCA plots** revealing patterns of genetic structure
+-   Cluster-specific **PCA plots** revealing patterns of genetic structure
 
--    **LD heatmaps** across scaffolds and genomic windows
+-   **LD heatmaps** across scaffolds and genomic windows
 
--    **LD networks** highlighting linkage architecture and connectivity
+-   **LD networks** highlighting linkage architecture and connectivity
 
--    **Partial RDAs** evaluating genotype–environment and genotype–phenotype associations
+-   **Partial RDAs** evaluating genotype–environment and genotype–phenotype associations
 
--    **Functional annotations** of genes contained within LD blocks
+-   **Functional annotations** of genes contained within LD blocks
 
 -   **Searchable tables** linking genomic regions to annotated biological functions
 

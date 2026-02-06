@@ -13,10 +13,10 @@ website:
         text: Home
       - href: functions.qmd
         text: Browse by function
-      - href: acknowledgements.qmd  
-        text: Acknowledgements
       - href: methods.qmd
         text: Methods & Citations
+      - href: acknowledgements.qmd  
+        text: Acknowledgements
         
 
 format:
