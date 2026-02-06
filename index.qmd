@@ -1,6 +1,6 @@
 ---
 title: "Sugar Kelp LD Atlas"
-author: "Gregory N. Puncher"
+author: "Gregory N. Puncher, Stephen J.B. O'Leary, Flora Salvo, France Dufresne"
 title-block-style: none
 format:
   html:
@@ -12,19 +12,39 @@ editor: visual
 ![](assets/logos/MERINOV.png){height="60px"} ![](assets/logos/UQAR.png){height="60px"}
 :::
 
-## Welcome
+The Sugar Kelp LD Atlas is an interactive web resource for exploring genomic structure and linkage disequilibrium architecture in *Saccharina latissima*. It was developed to accompany population genomic analyses of sugar kelp and to provide an accessible, high-resolution view of multilocus patterns that are difficult to convey in static figures.
 
-This site hosts PCA plots, LD heatmaps, and LD network visualizations for major linkage disequilibrium (LD) clusters in *Saccharina latissima*.
+Users can browse individual LD clusters, examine ordination and network structure, and connect statistical signals to functional genomic context.
 
-It is intended as a browsable companion to genomic analyses of sugar kelp population structure and local adaptation.
+### What this atlas provides
 
-## What you’ll find here
+-    Cluster-specific **PCA plots** revealing patterns of genetic structure
 
--   PCA plots for each LD cluster
--   LD heatmaps by scaffold and genomic window
--   LD network visualizations
--   Functional and molecular annotations
--   Searchable tables linking function to genomic regions
+-    **LD heatmaps** across scaffolds and genomic windows
+
+-    **LD networks** highlighting linkage architecture and connectivity
+
+-    **Partial RDAs** evaluating genotype–environment and genotype–phenotype associations
+
+-    **Functional annotations** of genes contained within LD blocks
+
+-   **Searchable tables** linking genomic regions to annotated biological functions
+
+This site is intended as both a companion to published analyses and a standalone exploratory tool for understanding the genomic basis of population structure and adaptation in sugar kelp.
+
+### How to use this site
+
+This site is designed for interactive exploration of genomic structure across linkage disequilibrium (LD) clusters in *Saccharina latissima*.
+
+-   Use the **navigation menu** to browse results by genomic region or functional category.\
+-   The **search bar** allows keyword-based searches across gene annotations, scaffolds, and LD clusters.\
+-   **Interactive tables** can be sorted, filtered, and searched to identify genomic regions of interest.\
+-   Clicking a cluster opens a dedicated page containing **PCA plots**, **LD heatmaps**, **LD networks**, and **partial RDA results** for that region.\
+-   Figures are interactive where applicable and can be inspected in detail to explore patterns of linkage, structure, and association.
+
+The atlas is intended to complement static figures and tables by enabling detailed, region-specific inspection of results.
+
+Note: A full citation should accompany any published analyses making use of this resource.
 
 ## Browse clusters
 

@@ -1,0 +1,98 @@
+---
+title: "Methods & Citations"
+---
+
+## Overview
+
+This website presents an interactive atlas of linkage disequilibrium (LD) architecture and genomic structure in *Saccharina latissima*. The atlas was developed to complement population genomic analyses by providing region-specific visualization of ordination results, LD structure, network connectivity, and functional annotation.
+
+All analyses were conducted using whole-genome sequencing data and are summarized here in an interactive format to facilitate detailed exploration of results that cannot be fully represented as static figures.
+
+---
+
+##  Sampling and Tissue Collection
+
+Sporophytes were collected by scuba diving or by hand at low tide between 2018 and 2023 from 8 locations spanning the Estuary and Gulf of St. Lawrence and the Atlantic coast of Nova Scotia. From each individual, approximately 2.5 cm² of blade tissue was excised using either a circular punch or scalpel. Samples were carefully cleaned, blotted dry, and desiccated in silica gel prior to DNA extraction, with desiccant replaced regularly to maintain sample integrity.
+At selected sites, phenotypic characteristics were recorded. Where possible, fertile tissue from mature sporophytes was retained for induced sporulation and incorporation into an ex situ germplasm collection.
+
+---
+
+## Genomic data
+
+Whole-genome sequencing (WGS) data were aligned to the recently published scaffolded and annotated *Sacharina latissima* genome (DeWeese et al. 2025) and processed using standard population genomic workflows. Variant discovery and filtering produced a high-quality SNP dataset used for downstream analyses of population structure, linkage disequilibrium, and genotype–environment associations.
+
+Analyses focused on genomic regions exhibiting elevated LD, which were identified and summarized as LD clusters spanning contiguous genomic windows.
+
+---
+
+## Identification of LD clusters
+
+Linkage disequilibrium was quantified among SNPs across genomic windows using pairwise LD metrics. LD clusters were defined as groups of loci exhibiting strong linkage within genomic regions and were summarized by scaffold and physical coordinates.
+
+These clusters form the primary organizational units of the atlas. Each cluster is represented by a dedicated page that integrates multiple analytical perspectives.
+
+---
+
+## Ordination analyses (PCA)
+
+Principal component analyses (PCA) were performed independently for SNPs within each LD cluster to characterize patterns of multilocus genetic structure.
+
+PCA results are visualized interactively, allowing inspection of population separation and variance explained by individual components. These analyses facilitate comparison of structure among LD clusters and across genomic regions.
+
+---
+
+## Linkage disequilibrium visualization
+
+### LD heatmaps
+
+Pairwise LD among SNPs within each cluster was visualized using LD heatmaps, organized by scaffold and genomic window. Heatmaps provide a detailed view of linkage structure across each region and highlight boundaries and internal structure of LD blocks.
+
+### LD networks
+
+LD networks were constructed by representing SNPs as nodes and LD relationships as edges above defined thresholds. Network visualizations emphasize connectivity patterns and reveal fine-scale structure within LD clusters that may not be apparent from heatmaps alone.
+
+---
+
+## Genotype–environment and genotype–phenotype associations
+
+Partial redundancy analyses (RDA) were used to test for associations between genetic variation within LD clusters and environmental or phenotypic variables while accounting for background population structure.
+
+Separate RDAs were performed for genotype–environment and genotype–phenotype associations. Results are presented as ordination biplots highlighting significant predictors and loci contributing to observed patterns.
+
+---
+
+## Functional annotation
+
+Gene models overlapping LD clusters were identified using genomic coordinates. Functional annotation was obtained from the Joint Genome Institute (JGI) Genome Portal for the *Saccharina latissima* reference genome (SL-CT1-FG3 v1.0; Frozen Gene Catalog, 2024-04-09; DeWeese et al. 2025).
+
+Gene Ontology (GO) terms, molecular function, biological process, and cellular component annotations were associated with genes located within LD clusters. These annotations are summarized in searchable tables linking functional information to specific genomic regions.
+
+---
+
+## Interactive tables and figures
+
+All tables and figures presented in this atlas are interactive and rendered client-side in the web browser. Tables support sorting, filtering, and keyword search, while figures allow detailed inspection of patterns across clusters and analyses.
+
+The interactive format is intended to support transparent exploration of results and to complement primary analyses presented in static form.
+
+---
+
+## Software and implementation
+
+This atlas was generated using the Quarto publishing system and the R statistical environment. Key R packages were used for data manipulation, genomic interval operations, visualization, and interactive table rendering.
+
+The complete source code and rendered site are hosted on GitHub, and the atlas is published using GitHub Pages.
+
+---
+
+## Intended use and limitations
+
+This resource is intended as a companion to population genomic analyses of *Saccharina latissima*. While extensive quality control and validation were applied, users are encouraged to interpret patterns within the broader context of biological replication, sampling design, and analytical assumptions.
+
+---
+
+## Citations
+
+DeWeese K, Molano G, Calhoun S, Lipzen A, Jenkins J, Williams M, Plott C, Talag J, Grimwood J, Jannink JL, Grigoriev IV, Schmutz J, Yarish C, Nuzhdin S, Lindell S (2025) Scaffolded and annotated nuclear and organelle genomes of the North American brown alga Saccharina latissima. Front Genet 16:1494480.
+
+Nordberg H, Cantor M, Dusheyko S, Hua S, Poliakov A, Shabalov I, Smirnova T, Grigoriev IV, Dubchak I. (2014) The genome portal of the Department of Energy Joint Genome Institute: 2014 updates. Nucleic Acids Res. 2014,42(1):D26-31.

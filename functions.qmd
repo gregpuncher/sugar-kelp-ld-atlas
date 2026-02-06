@@ -7,8 +7,6 @@ execute:
 ---
 Search the table below (use the filters at the top of each column) to find LD clusters associated with functional annotations.
 
-
-
 ```{r}
 library(tidyverse)
 library(DT)
@@ -100,7 +98,13 @@ DT::datatable(
   options = list(
     pageLength = 25,
     scrollX = TRUE,
-    autoWidth = TRUE
+    autoWidth = TRUE,
+    columnDefs = list(
+      list(
+        className = "dt-center",
+        targets = 2:5
+      )
+    )  
   )
 )
 ```

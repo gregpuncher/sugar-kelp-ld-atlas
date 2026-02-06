@@ -8,4 +8,10 @@ This work was supported by:
 - L'Université du Québec à Rimouski
 - National Research Council
 
-We thank collaborators, field teams, and technical staff for assistance with sampling, sequencing, and analysis.
+We acknowledge that this research was conducted on the traditional and unceded territories of the Mi’kmaq in Mi’kma’ki (Nova Scotia); on the traditional lands of the Innu in what is now Quebec; and on the lands of the Mi’kmaq and Beothuk in the Gulf of St. Lawrence region, including the Îles-de-la-Madeleine and the Saint-Pierre-et-Miquelon archipelago. We recognize the enduring relationships these Indigenous Nations have with their lands and waters, and we are grateful for the opportunity to conduct research within these territories.
+
+Sample and morphotype data collection was performed by the following: Rafael Martin Martin (Merinov/UQAR), Tristan Le Goff (Merinov), Marie- Eve Clark (Merinov), Marie-Pierre Turcotte (Merinov), Kira Krumshansl (DFO), Nick Jeffery (DFO), Laura Garrison (NRC), Ecology Action Center Kelp Curious team, Charlene Leblanc (Leblanc seeded lines), Tristan Reesor and Olivier Renaud, Sandra Blais (PURMER), Dalhousie/MERINOV coop students (Ainhoa Fournier, Kassiani Manolikakis, Meghan Oliver, and Eliza MacDonald), Scott Dockendorff (Bounty Bay Shellfish), Michelle Samson (Premium Seafoods), Mi’kmaq Wolastoqey Indigenous Fisheries Management Association (MWIFMA), and Laura Garrison (NRC).
+
+DNA extraction and analysis was performed by Rafael Martin Martin (Merinov/UQAR), Emmanuelle Vandermeeren, and Marie Treillefort.
+
+Many thanks to Scott Lindell’s lab at the Woods Hole Oceanographic Institution who allowed us early access to their sugar kelp reference genome.
