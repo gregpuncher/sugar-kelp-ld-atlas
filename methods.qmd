@@ -18,7 +18,7 @@ At selected sites, phenotypic characteristics were recorded. Where possible, fer
 
 **Figure 1.** Sampling locations of *Saccharina latissima* collected between 2018–2023 from the Estuary and Gulf of St. Lawrence and the Atlantic coast of Nova Scotia.
 
-![](assets/logos/Sample_collection.jpg){fig-cap=false width=100%}
+![](assets/logos/Sample_collection.png){fig-cap=false width=100%}
 
 **Figure 2.** *Saccharina latissima* sample collection. LEFT - A SCUBA diver collects samples at Miquelon in 2023 (photo credit: Eric Brossier). CENTRE - Phenotype data being collected from an adult sporophyte at Sept Iles in 2022 (photo credit: Tristan LeGoff). RIGHT - Samples from Sept Iles are prepared for preservation and genetic analysis in 2022 (photo credit: Tristan LeGoff).
 
