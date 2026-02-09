@@ -9,7 +9,7 @@ editor: visual
 ---
 
 ::: {style="display:flex; gap:20px; align-items:center; justify-content:flex-end;"}
-![](assets/logos/MERINOV.png){height="60px"} ![](assets/logos/UQAR.png){height="60px"}
+![](assets/logos/MERINOV.png){height="60px"} ![](assets/logos/UQAR.png){height="60px"} ![](assets/logos/NRC.png){height="60px"}
 :::
 
 The Sugar Kelp LD Atlas is an interactive web resource for exploring genomic structure and linkage disequilibrium architecture in *Saccharina latissima*. It was developed to accompany population genomic analyses of sugar kelp and to provide an accessible, high-resolution view of multilocus patterns that are difficult to convey in static figures.
