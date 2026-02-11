@@ -6,7 +6,7 @@ This work was supported by:
 
 - MERINOV
 - L'Université du Québec à Rimouski
-- National Research Council
+- National Research Council Canada
 
 We acknowledge that this research was conducted on the traditional and unceded territories of the Mi’kmaq in Mi’kma’ki (Nova Scotia); on the traditional lands of the Innu in what is now Quebec; and on the lands of the Mi’kmaq and Beothuk in the Gulf of St. Lawrence region, including the Îles-de-la-Madeleine and the Saint-Pierre-et-Miquelon archipelago. We recognize the enduring relationships these Indigenous Nations have with their lands and waters, and we are grateful for the opportunity to conduct research within these territories.
 
